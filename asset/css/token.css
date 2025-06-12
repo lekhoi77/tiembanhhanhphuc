@@ -1,0 +1,269 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  background-color: var(--color-primary-500);
+}
+
+main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* TOKENS */
+:root {
+  /* Global Primary Color Tokens */
+  --global-primary-50: #EFF3FC;
+  --global-primary-100: #DEF3F9;
+  --global-primary-200: #BDE8F3;
+  --global-primary-300: #9CDCEE;
+  --global-primary-500: #5AC5E2;
+  --global-primary-600: #48A4BC;
+  --global-primary-700: #3C8397;
+  --global-primary-900: #1E424B;
+
+  /* Global Secondary Color Tokens */
+  --global-secondary-100: #D4E5E7;
+  --global-secondary-200: #A8CBD0;
+  --global-secondary-400: #5197A1;
+  --global-secondary-500: #267D89;
+  --global-secondary-600: #206872;
+  --global-secondary-800: #133F45;
+
+  /* Global Neutral Color Tokens */
+  --global-neutral-50: #FDF3F7;
+  --global-neutral-100: #FEFCFC;
+  --global-neutral-200: #FCF9F9;
+  --global-neutral-400: #F9F4F4;
+  --global-neutral-500: #F8F1F1;
+  --global-neutral-600: #CFC9C9;
+  --global-neutral-800: #7C7979;
+
+  /* Typography Tokens - Display */
+  --font-family-display: 'Montserrat', system-ui, -apple-system, sans-serif;
+  
+  /* Display 60 */
+  --Display-60-Reg: 400 60px/1.2 var(--font-family-display);
+  --Display-60-Med: 500 60px/1.2 var(--font-family-display);
+  --Display-60-Bold: 700 60px/1.2 var(--font-family-display);
+  
+  /* Display 48 */
+  --Display-48-Reg: 400 48px/1.2 var(--font-family-display);
+  --Display-48-Med: 500 48px/1.2 var(--font-family-display);
+  --Display-48-Bold: 700 48px/1.2 var(--font-family-display);
+  
+  /* Display 36 */
+  --Display-36-Reg: 400 36px/1.2 var(--font-family-display);
+  --Display-36-Med: 500 36px/1.2 var(--font-family-display);
+  --Display-36-Bold: 700 36px/1.2 var(--font-family-display);
+  
+  /* Display 30 */
+  --Display-30-Reg: 400 30px/1.2 var(--font-family-display);
+  --Display-30-Med: 500 30px/1.2 var(--font-family-display);
+  --Display-30-Bold: 700 30px/1.2 var(--font-family-display);
+
+  /* Typography Tokens - Text */
+  --font-family-text: 'Montserrat', system-ui, -apple-system, sans-serif;
+  
+  /* Text 24 */
+  --Text-24-Reg: 400 24px/1.5 var(--font-family-text);
+  --Text-24-Med: 500 24px/1.5 var(--font-family-text);
+  --Text-24-Bold: 700 24px/1.5 var(--font-family-text);
+  
+  /* Text 20 */
+  --Text-20-Reg: 400 20px/1.5 var(--font-family-text);
+  --Text-20-Med: 500 20px/1.5 var(--font-family-text);
+  --Text-20-Bold: 700 20px/1.5 var(--font-family-text);
+  
+  /* Text 18 */
+  --Text-18-Reg: 400 18px/1.5 var(--font-family-text);
+  --Text-18-Med: 500 18px/1.5 var(--font-family-text);
+  --Text-18-Bold: 700 18px/1.5 var(--font-family-text);
+  
+  /* Text 16 */
+  --Text-16-Reg: 400 16px/1.5 var(--font-family-text);
+  --Text-16-Med: 500 16px/1.5 var(--font-family-text);
+  --Text-16-Bold: 700 16px/1.5 var(--font-family-text);
+  
+  /* Text 14 */
+  --Text-14-Reg: 400 14px/1.5 var(--font-family-text);
+  --Text-14-Med: 500 14px/1.5 var(--font-family-text);
+  --Text-14-Bold: 700 14px/1.5 var(--font-family-text);
+
+  /* Text 13 */
+  --Text-13-Reg: 400 13px/1.5 var(--font-family-text);
+  --Text-13-Med: 500 13px/1.5 var(--font-family-text);
+
+  /* Text 12 */
+  --Text-12-Reg: 400 12px/1.5 var(--font-family-text);
+  --Text-12-Med: 500 12px/1.5 var(--font-family-text);
+}
