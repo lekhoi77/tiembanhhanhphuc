@@ -10,7 +10,7 @@ function animateToCard(cardIndex) {
     // Animate cards horizontally
     gsap.to(".cardscroll", {
         x: `-${cardIndex * 100}vw`,
-        duration: 0.8,
+        duration: 0.6,
         ease: "power2.inOut"
     });
     
@@ -134,5 +134,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         initCardScroll();
-    }, 500); // Increased delay
+    }, 100); // Increased delay
 }); 
