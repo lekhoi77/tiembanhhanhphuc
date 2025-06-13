@@ -14,11 +14,31 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  /* Ẩn thanh cuộn dọc trên mọi trình duyệt */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* Ẩn thanh cuộn trên Chrome, Safari và Edge */
+html::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   background-color: var(--global-neutral-200);
+  
+  /* Ẩn thanh cuộn dọc trên mọi trình duyệt */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* Ẩn thanh cuộn trên Chrome, Safari và Edge */
+body::-webkit-scrollbar {
+  display: none;
 }
 
 main {

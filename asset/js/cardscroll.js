@@ -78,7 +78,7 @@ function initCardScroll() {
     ScrollTrigger.create({
         trigger: cardScrollSection,
         start: "top top-20", // Pin khi section cách đầu màn hình 20px
-        end: "+=900", // Pin trong khoảng scroll vừa đủ để xem hết 3 cards (400px mỗi card)
+        end: "+=1002", // Pin trong khoảng scroll vừa đủ để xem hết 3 cards (400px mỗi card)
         pin: true, // Khóa section tại chỗ
         pinSpacing: true, // Tạo khoảng trống để không đè lên section sau
         onEnter: () => {

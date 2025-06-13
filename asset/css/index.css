@@ -1,5 +1,6 @@
 body {
     background-color: var(--global-neutral-200);
+    overflow-x: scroll;
 }
 
 header {
