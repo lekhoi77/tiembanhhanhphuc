@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Phudu:wght@300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 /* CSS Reset */
 *,
 *::before,
@@ -16,14 +18,19 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  background-color: var(--color-primary-500);
+  background-color: var(--global-neutral-200);
 }
 
 main {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -74,6 +81,7 @@ textarea {
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
+  all:unset;
 }
 
 button,
@@ -170,7 +178,8 @@ template {
   display: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -182,78 +191,110 @@ table {
 /* TOKENS */
 :root {
   /* Global Primary Color Tokens */
-  --global-primary-50: #EFF3FC;
-  --global-primary-100: #DEF3F9;
-  --global-primary-200: #BDE8F3;
-  --global-primary-300: #9CDCEE;
-  --global-primary-500: #5AC5E2;
-  --global-primary-600: #48A4BC;
-  --global-primary-700: #3C8397;
-  --global-primary-900: #1E424B;
+  --global-primary-50: #F8EAEA;
+  --global-primary-100: #F0D5D5;
+  --global-primary-200: #E2ACAC;
+  --global-primary-300: #D38282;
+  --global-primary-400: #C55959;
+  --global-primary-500: #B62F2F;
+  --global-primary-600: #982727;
+  --global-primary-700: #791F1F;
+  --global-primary-800: #5B1818;
+  --global-primary-900: #3D1010;
+  --global-primary-950: #2E0C0C;
 
   /* Global Secondary Color Tokens */
-  --global-secondary-100: #D4E5E7;
-  --global-secondary-200: #A8CBD0;
-  --global-secondary-400: #5197A1;
-  --global-secondary-500: #267D89;
-  --global-secondary-600: #206872;
-  --global-secondary-800: #133F45;
+  --global-secondary-50: #FEF9E9;
+  --global-secondary-100: #FDF4D3;
+  --global-secondary-200: #FAE8A7;
+  --global-secondary-300: #F8DD7B;
+  --global-secondary-400: #F5D14F;
+  --global-secondary-500: #F3C623;
+  --global-secondary-600: #CBA51D;
+  --global-secondary-700: #A28417;
+  --global-secondary-800: #7A6312;
+  --global-secondary-900: #51420C;
+  --global-secondary-950: #3D3209;
 
   /* Global Neutral Color Tokens */
-  --global-neutral-50: #FDF3F7;
-  --global-neutral-100: #FEFCFC;
-  --global-neutral-200: #FCF9F9;
-  --global-neutral-400: #F9F4F4;
-  --global-neutral-500: #F8F1F1;
-  --global-neutral-600: #CFC9C9;
-  --global-neutral-800: #7C7979;
+  --global-neutral-50: #FFFDFA;
+  --global-neutral-100: #FEFCF5;
+  --global-neutral-200: #FEF9EA;
+  --global-neutral-300: #FDF5E0;
+  --global-neutral-400: #FDF2D5;
+  --global-neutral-500: #FCEFCB;
+  --global-neutral-600: #D2C7A9;
+  --global-neutral-700: #A89F87;
+  --global-neutral-800: #7E7866;
+  --global-neutral-900: #545044;
+  --global-neutral-950: #3F3C33;
 
   /* Typography Tokens - Display */
-  --font-family-display: 'Montserrat', system-ui, -apple-system, sans-serif;
-  
+  --font-family-display: 'Phudu', system-ui, -apple-system, sans-serif;
+
   /* Display 60 */
   --Display-60-Reg: 400 60px/1.2 var(--font-family-display);
   --Display-60-Med: 500 60px/1.2 var(--font-family-display);
   --Display-60-Bold: 700 60px/1.2 var(--font-family-display);
-  
+
   /* Display 48 */
   --Display-48-Reg: 400 48px/1.2 var(--font-family-display);
   --Display-48-Med: 500 48px/1.2 var(--font-family-display);
   --Display-48-Bold: 700 48px/1.2 var(--font-family-display);
-  
+
   /* Display 36 */
   --Display-36-Reg: 400 36px/1.2 var(--font-family-display);
   --Display-36-Med: 500 36px/1.2 var(--font-family-display);
   --Display-36-Bold: 700 36px/1.2 var(--font-family-display);
-  
+
   /* Display 30 */
   --Display-30-Reg: 400 30px/1.2 var(--font-family-display);
   --Display-30-Med: 500 30px/1.2 var(--font-family-display);
   --Display-30-Bold: 700 30px/1.2 var(--font-family-display);
-
-  /* Typography Tokens - Text */
-  --font-family-text: 'Montserrat', system-ui, -apple-system, sans-serif;
+   
   
+
+  /* Display 18 */
+  --Display-18-Reg: 400 18px/1.2 var(--font-family-display);
+  --Display-18-Med: 500 18px/1.2 var(--font-family-display);
+  --Display-18-Bold: 700 18px/1.2 var(--font-family-display);
+
+  /* Display 20 */
+  --Display-20-Reg: 400 20px/1.2 var(--font-family-display);
+  --Display-20-Med: 500 20px/1.2 var(--font-family-display);
+  --Display-20-Bold: 700 20px/1.2 var(--font-family-display);
+
+  /* Display 24 */
+  --Display-24-Reg: 400 24px/1.2 var(--font-family-display);
+  --Display-24-Med: 500 24px/1.2 var(--font-family-display);
+  --Display-24-Bold: 700 24px/1.2 var(--font-family-display);
+/* Display 16 */
+--Display-16-Reg: 400 16px/1.2 var(--font-family-display);
+--Display-16-Med: 500 16px/1.2 var(--font-family-display);
+--Display-16-Bold: 700 16px/1.2 var(--font-family-display);
+  /* Typography Tokens - Text */
+  --font-family-text: 'Roboto Serif ', system-ui, -apple-system, sans-serif;
+
   /* Text 24 */
   --Text-24-Reg: 400 24px/1.5 var(--font-family-text);
   --Text-24-Med: 500 24px/1.5 var(--font-family-text);
   --Text-24-Bold: 700 24px/1.5 var(--font-family-text);
-  
+
   /* Text 20 */
   --Text-20-Reg: 400 20px/1.5 var(--font-family-text);
   --Text-20-Med: 500 20px/1.5 var(--font-family-text);
   --Text-20-Bold: 700 20px/1.5 var(--font-family-text);
-  
+
   /* Text 18 */
   --Text-18-Reg: 400 18px/1.5 var(--font-family-text);
   --Text-18-Med: 500 18px/1.5 var(--font-family-text);
   --Text-18-Bold: 700 18px/1.5 var(--font-family-text);
-  
+
   /* Text 16 */
   --Text-16-Reg: 400 16px/1.5 var(--font-family-text);
   --Text-16-Med: 500 16px/1.5 var(--font-family-text);
   --Text-16-Bold: 700 16px/1.5 var(--font-family-text);
-  
+
   /* Text 14 */
   --Text-14-Reg: 400 14px/1.5 var(--font-family-text);
   --Text-14-Med: 500 14px/1.5 var(--font-family-text);
