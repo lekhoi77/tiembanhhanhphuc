@@ -79,7 +79,8 @@ nav button {
 /* Hero section */
 .hero {
     display: flex;
-    padding: 64px 0px;
+    padding-top: 64px ;
+    padding-bottom: 32px;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -195,11 +196,13 @@ nav button {
 /* About us section */
 .aboutus {
     display: flex;
-    padding: 64px 0px;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
     position: relative;
+    padding-bottom: 32px;
 }
 
 .aboutus .heading {
@@ -209,7 +212,10 @@ nav button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 64px;
+    padding-bottom: 32px;
+    position: relative;
+    z-index: 10;
+    transform: translateY(200px); /* Bắt đầu ở dưới cards */
 }
 
 .aboutus .heading h1 {
@@ -236,18 +242,22 @@ font-weight: 700;
 line-height: 1.1;
 }
 .cardscroll-container {
+    background-color: var(--global-neutral-200);
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     overflow: hidden;
     position: relative;
+    z-index: 100;
 }
 
 .cardscroll {
     display: flex;
     flex-direction: row;
-    width: 300vw; /* 3 times viewport width for 3 cards */
+    width: 100vw; /* 3 times viewport width for 3 cards */
     height: 100%;
     position: relative;
+    justify-content: space-between;
+    z-index: 100;
 }
 
 .cardscroll img {
@@ -255,4 +265,5 @@ line-height: 1.1;
     height: 100%;
     object-fit: contain;
     flex-shrink: 0;
+    z-index: 100;
 }
